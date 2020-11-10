@@ -8,8 +8,8 @@ let Play;
 
 function preload() {
   // Load a sound file
-  v = loadSound('Voice 003.m4a');
-  song = loadSound('zith.mp3');
+  v = loadSound('Yep.m4a');
+  song = loadSound('bip.mp3');
   Play = loadFont('Play-Regular.ttf');
 }
 
