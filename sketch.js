@@ -8,8 +8,8 @@ let Play;
 
 function preload() {
   // Load a sound file
-  v = loadSound('Yep.m4a');
-  song = loadSound('bip.mp3');
+  //v = loadSound('Yep.m4a');
+  song = loadSound('bp.mp3');
   Play = loadFont('Play-Regular.ttf');
 }
 
@@ -52,14 +52,14 @@ function draw() {
   let volume = map(mouseX, 0, width, 0, 1.6);
   volume = constrain(volume, 0.3, 1);
   song.amp(volume);
-  v.amp(volume);
+  //v.amp(volume);
 
   // Set the rate to a range between 0.1 and 4
   // Changing the rate alters the pitch
   let speed = map(mouseY, 0.5, height, 0, 2.2);
   speed = constrain(speed, 0.5, 2.2);
   song.rate(speed);
-  v.rate(speed);
+  //v.rate(speed);
   if (count > 1) {
     stroke(236, 255, 94);
     fill(51, 100);
@@ -73,9 +73,9 @@ function draw() {
 function touchStarted() {
     if (count < 3) {
     song.loop();
-    v.loop(); 
+   // v.loop(); 
    } else  {
-    v.stop();   
+    //v.stop();   
 }
  count++; 
 }
