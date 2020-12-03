@@ -8,7 +8,6 @@ let Play;
 
 function preload() {
   // Load a sound file
-  //v = loadSound('Yep.m4a');
   song = loadSound('bp.mp3');
   Play = loadFont('Play-Regular.ttf');
 }
